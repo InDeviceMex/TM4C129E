@@ -8,41 +8,41 @@ C_SRCS += \
 ../Source\ Driver/MPU.c \
 ../Source\ Driver/NVIC.c \
 ../Source\ Driver/SCB.c \
-../Source\ Driver/SysTick.c 
+../Source\ Driver/SYSTICK.c 
 
 C_DEPS += \
 ./Source\ Driver/FPU.d \
 ./Source\ Driver/MPU.d \
 ./Source\ Driver/NVIC.d \
 ./Source\ Driver/SCB.d \
-./Source\ Driver/SysTick.d 
+./Source\ Driver/SYSTICK.d 
 
 OBJS += \
 ./Source\ Driver/FPU.obj \
 ./Source\ Driver/MPU.obj \
 ./Source\ Driver/NVIC.obj \
 ./Source\ Driver/SCB.obj \
-./Source\ Driver/SysTick.obj 
+./Source\ Driver/SYSTICK.obj 
 
 OBJS__QUOTED += \
 "Source Driver/FPU.obj" \
 "Source Driver/MPU.obj" \
 "Source Driver/NVIC.obj" \
 "Source Driver/SCB.obj" \
-"Source Driver/SysTick.obj" 
+"Source Driver/SYSTICK.obj" 
 
 C_DEPS__QUOTED += \
 "Source Driver/FPU.d" \
 "Source Driver/MPU.d" \
 "Source Driver/NVIC.d" \
 "Source Driver/SCB.d" \
-"Source Driver/SysTick.d" 
+"Source Driver/SYSTICK.d" 
 
 C_SRCS__QUOTED += \
 "../Source Driver/FPU.c" \
 "../Source Driver/MPU.c" \
 "../Source Driver/NVIC.c" \
 "../Source Driver/SCB.c" \
-"../Source Driver/SysTick.c" 
+"../Source Driver/SYSTICK.c" 
 
 

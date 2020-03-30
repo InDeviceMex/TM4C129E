@@ -4,12 +4,12 @@
  * main.c
  */
 
+#include <SYSTICK.h>
 #include "stdlib.h"
 #include "SCB.h"
 #include "NVIC.h"
 #include "FPU.h"
 #include "MPU.h"
-#include "SysTick.h"
 
 
 void main(void)

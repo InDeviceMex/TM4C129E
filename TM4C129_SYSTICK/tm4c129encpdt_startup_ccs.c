@@ -24,7 +24,7 @@
 
 #include <stdint.h>
 #include <SCB.h>
-#include <SysTick.h>
+#include <SYSTICK.h>
 
 //*****************************************************************************
 //
