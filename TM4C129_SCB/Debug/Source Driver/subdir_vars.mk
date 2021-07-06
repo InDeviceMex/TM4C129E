@@ -2,6 +2,8 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
+SHELL = cmd.exe
+
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Source\ Driver/SCB.c 
@@ -13,10 +15,10 @@ OBJS += \
 ./Source\ Driver/SCB.obj 
 
 OBJS__QUOTED += \
-"Source Driver/SCB.obj" 
+"Source Driver\SCB.obj" 
 
 C_DEPS__QUOTED += \
-"Source Driver/SCB.d" 
+"Source Driver\SCB.d" 
 
 C_SRCS__QUOTED += \
 "../Source Driver/SCB.c" 

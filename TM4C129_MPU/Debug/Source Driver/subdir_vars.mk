@@ -2,6 +2,8 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
+SHELL = cmd.exe
+
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Source\ Driver/FPU.c \
@@ -22,16 +24,16 @@ OBJS += \
 ./Source\ Driver/SCB.obj 
 
 OBJS__QUOTED += \
-"Source Driver/FPU.obj" \
-"Source Driver/MPU.obj" \
-"Source Driver/NVIC.obj" \
-"Source Driver/SCB.obj" 
+"Source Driver\FPU.obj" \
+"Source Driver\MPU.obj" \
+"Source Driver\NVIC.obj" \
+"Source Driver\SCB.obj" 
 
 C_DEPS__QUOTED += \
-"Source Driver/FPU.d" \
-"Source Driver/MPU.d" \
-"Source Driver/NVIC.d" \
-"Source Driver/SCB.d" 
+"Source Driver\FPU.d" \
+"Source Driver\MPU.d" \
+"Source Driver\NVIC.d" \
+"Source Driver\SCB.d" 
 
 C_SRCS__QUOTED += \
 "../Source Driver/FPU.c" \

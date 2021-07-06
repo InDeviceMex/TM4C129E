@@ -1,1 +1,1 @@
-"./main.obj" "./tm4c129encpdt_startup_ccs.obj" "./Source Driver/FPU.obj" "./Source Driver/MPU.obj" "./Source Driver/NVIC.obj" "./Source Driver/SCB.obj" "./Source Driver/SYSTICK.obj" "../tm4c129encpdt.cmd" -llibc.a 
+"./main.obj" "./tm4c129encpdt_startup_ccs.obj" "./Source Driver/FPU.obj" "./Source Driver/MPU.obj" "./Source Driver/NVIC.obj" "./Source Driver/SCB.obj" "./Source Driver/SYSTICK.obj" -llibc.a 

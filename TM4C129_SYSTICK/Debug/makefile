@@ -2,7 +2,9 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-CG_TOOL_ROOT := /home/vyldram/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_19.6.0.STS
+SHELL = cmd.exe
+
+CG_TOOL_ROOT := D:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS
 
 GEN_OPTS__FLAG := 
 GEN_CMDS__FLAG := 
@@ -15,14 +17,13 @@ ORDERED_OBJS += \
 "./Source Driver/NVIC.obj" \
 "./Source Driver/SCB.obj" \
 "./Source Driver/SYSTICK.obj" \
-"../tm4c129encpdt.cmd" \
 $(GEN_CMDS__FLAG) \
 -llibc.a \
 
 -include ../makefile.init
 
-RM := rm -rf
-RMDIR := rm -rf
+RM := DEL /F
+RMDIR := RMDIR /S/Q
 
 # All of the sources participating in the build are defined here
 -include sources.mk
@@ -139,29 +140,29 @@ BIN_OUTPUTS__QUOTED += \
 
 
 # All Target
-all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
+all: $(OBJS) $(GEN_CMDS)
 	@$(MAKE) --no-print-directory -Onone "TM4C129_SYSTICK.out"
 
 # Tool invocations
-TM4C129_SYSTICK.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
+TM4C129_SYSTICK.out: $(OBJS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: ARM Linker'
-	"/home/vyldram/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_19.6.0.STS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C129ENCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"TM4C129_SYSTICK.map" --heap_size=0 --stack_size=512 -i"/home/vyldram/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_19.6.0.STS/lib" -i"/home/vyldram/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_19.6.0.STS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="TM4C129_SYSTICK_linkInfo.xml" --rom_model -o "TM4C129_SYSTICK.out" $(ORDERED_OBJS)
+	"D:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C129ENCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"TM4C129_SYSTICK.map" --heap_size=0 --stack_size=512 -i"D:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/lib" -i"D:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="TM4C129_SYSTICK_linkInfo.xml" --rom_model -o "TM4C129_SYSTICK.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
 TM4C129_SYSTICK.hex: $(EXE_OUTPUTS)
-	@echo 'Building files: $(strip $(EXE_OUTPUTS__QUOTED))'
+	@echo 'Building secondary target: "$@"'
 	@echo 'Invoking: ARM Hex Utility'
-	"/home/vyldram/ti/ccs930/ccs/tools/compiler/ti-cgt-arm_19.6.0.STS/bin/armhex"  -o "TM4C129_SYSTICK.hex" $(EXE_OUTPUTS__QUOTED)
-	@echo 'Finished building: $(strip $(EXE_OUTPUTS__QUOTED))'
+	"D:/ti/ccs1031/ccs/tools/compiler/ti-cgt-arm_20.2.4.LTS/bin/armhex" --diag_wrap=off -o "TM4C129_SYSTICK.hex" $(EXE_OUTPUTS__QUOTED)
+	@echo 'Finished building secondary target: "$@"'
 	@echo ' '
 
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "main.obj" "tm4c129encpdt_startup_ccs.obj" "Source Driver/FPU.obj" "Source Driver/MPU.obj" "Source Driver/NVIC.obj" "Source Driver/SCB.obj" "Source Driver/SYSTICK.obj" 
-	-$(RM) "main.d" "tm4c129encpdt_startup_ccs.d" "Source Driver/FPU.d" "Source Driver/MPU.d" "Source Driver/NVIC.d" "Source Driver/SCB.d" "Source Driver/SYSTICK.d" 
+	-$(RM) "main.obj" "tm4c129encpdt_startup_ccs.obj" "Source Driver\FPU.obj" "Source Driver\MPU.obj" "Source Driver\NVIC.obj" "Source Driver\SCB.obj" "Source Driver\SYSTICK.obj" 
+	-$(RM) "main.d" "tm4c129encpdt_startup_ccs.d" "Source Driver\FPU.d" "Source Driver\MPU.d" "Source Driver\NVIC.d" "Source Driver\SCB.d" "Source Driver\SYSTICK.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
